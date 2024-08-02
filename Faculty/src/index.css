@@ -9,15 +9,14 @@
   color: #1A5319;
   background-color: #D6EFD8;
 }
-body {
+/* body { */
   /* margin: 0; */
-  display: flex;
-  place-items: center;
-}
+  /* display: flex; */
+  /* place-items: center; */
+/* } */
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
 
