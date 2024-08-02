@@ -1,11 +1,61 @@
-body{
+body {
     background-color: #D6EFD8;
-    display:inline-block;
-    justify-content:center;
-    align-items:center;
-}
-.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* Your content styles here */
+  }
+  
+  .logo-container {
+    animation: slideIn 1s ease-in-out forwards;
+  }
+  
+  .logo {
     margin-top: 100px;
     height: 200px;
     width: 230px;
-}
+  }
+  
+  .typed {
+    margin: 1px;
+    opacity: 0;
+    animation: type 5s steps(30, end) forwards;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes type {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  
